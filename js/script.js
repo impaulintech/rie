@@ -1,11 +1,17 @@
+const nav = document.querySelector(".nav");
 const menu = document.querySelector(".nav_menu");
-const nav = document.querySelector("#nav");
+const close = document.querySelector(".close");
+const overlay = document.querySelector(".nav_overlay");
 
+window.addEventListener("load", () => {
+  document.body.classList.remove("preload");
+});
 menu.addEventListener("click", () => {
-  console.log("Nav Clicked", Math.random());
-  if (nav.style.display === "block") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "block";
-  }
+  nav.classList.add("nav-open");
+});
+close.addEventListener("click", () => {
+  nav.classList.remove("nav-open");
+});
+overlay.addEventListener("click", () => {
+  nav.classList.remove("nav-open");
 });
