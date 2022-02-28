@@ -1,5 +1,6 @@
 const nav = document.querySelector(".nav");
 const menu = document.querySelector(".nav_menu");
+const menu_btn = document.querySelector(".menu");
 const close = document.querySelector(".close");
 const overlay = document.querySelector(".nav_overlay");
 
@@ -13,5 +14,8 @@ close.addEventListener("click", () => {
   nav.classList.remove("nav-open");
 });
 overlay.addEventListener("click", () => {
+  nav.classList.remove("nav-open");
+});
+menu_btn.addEventListener("click", () => {
   nav.classList.remove("nav-open");
 });

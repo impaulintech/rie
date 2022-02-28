@@ -43,6 +43,7 @@ nav {
   margin-left: -100vw;
   transition: 0.3s;
   z-index: 9;
+  overflow-x: scroll;
 }
 
 .nav-open {
@@ -74,12 +75,12 @@ nav {
 .main_menu * {
   display: flex;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px;
 }
 .main_menu > ul {
   display: flex;
   flex-direction: column;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 .main_menu > ul > li {
   width: 100%;
@@ -102,7 +103,7 @@ nav {
   opacity: 6;
 }
 .hamburger_menu {
-  padding: 0 0 100px 10px;
+  padding: 0 0 50px 10px;
 }
 .close {
   margin-left: 10px;
@@ -118,12 +119,16 @@ nav {
 }
 .links {
   height: 15%;
-  padding: 0 25px;
+  padding: 0 30px;
+}
+.links > h3 {
+  padding-bottom: 90px;
 }
 .links > .social_media {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 /* Home heading style  */
